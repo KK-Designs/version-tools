@@ -3,6 +3,16 @@ A small module to check if two specified version numbers are major changes
 
 ---
 
+# Changelog (v1.0.1)
+
+• Added `typescript` support \
+• Added more details to metadata \
+• Made `options.debug` notr equired \
+• More code organiztion and optimizations \
+• Added tests with `jest`
+
+---
+
 # Installation
 ```
 npm i major-version-check
@@ -32,6 +42,6 @@ console.log(majorVer('1.0.0', '1.0.1'));
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `oldVersion`    | string  | `majorVer(oldVersion, ...)`              | The old version to compare    |
-| `newVersion`    | string  | `majorVer(..., newVersion)`              | The new version to compare |
+| `oldVersion`    | string (required) | `majorVer(oldVersion, ...)`              | The old version to compare    |
+| `newVersion`    | string (required) | `majorVer(..., newVersion)`              | The new version to compare |
 | `options.debug` | boolean | `majorVer(..., ..., , { debug: boolean });` | Weather to log debug messages |
