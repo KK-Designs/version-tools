@@ -1,10 +1,12 @@
 {
   "name": "major-version-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small module to check if two specified version numbers are major changes",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "echo \"http://jsfiddle.net/v1ko9wpa/\" && exit 1"
+    "test": "jest",
+    "demo": "echo \"http://jsfiddle.net/v1ko9wpa/\" && exit 1"
   },
   "keywords": [
     "major",
@@ -14,11 +16,17 @@
     "first-package",
     "javascript"
   ],
+  "bugs": {
+    "url": "https://github.com/KK-Designs/Major-version-check/issues"
+  },
   "homepage": "https://github.com/KK-Designs/Major-version-check#readme",
   "author": "NotBacon",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/KK-Designs/Major-version-check"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
   }
 }

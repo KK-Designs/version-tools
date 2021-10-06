@@ -1,0 +1,1 @@
+export function majorVer(oldVersion: string, newVersion: string, options: any);
