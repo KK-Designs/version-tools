@@ -1,7 +1,3 @@
-alert(majorVer('1.0.0', '2.0.1', {
-    debug: true
-  , }));
-  
 function majorVer(oldVersion, newVersion, options) {
     if (options.debug) console.log('Starting check...');
     if (options.debug) console.log('Error checking \'oldVersion\'...');

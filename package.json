@@ -4,13 +4,21 @@
   "description": "A small module to check if two specified version numbers are major changes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"http://jsfiddle.net/v1ko9wpa/\" && exit 1"
   },
-  "homepage": "https://simplyd.js.org",
-  "author": "Rahuletto",
+  "keywords": [
+    "major",
+    "version",
+    "version check",
+    "major-version-check",
+    "first-package",
+    "javascript"
+  ],
+  "homepage": "https://github.com/KK-Designs/Major-version-check#readme",
+  "author": "NotBacon",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rahuletto/simply-djs"
+    "url": "https://github.com/KK-Designs/Major-version-check"
   }
 }
