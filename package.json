@@ -6,7 +6,7 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "demo": "echo \"http://jsfiddle.net/v1ko9wpa/\" && exit 1"
+    "demo": "echo \"https://jsfiddle.net/NotBacon/60b57toj/\" && exit 1"
   },
   "keywords": [
     "major",
@@ -14,7 +14,8 @@
     "version check",
     "major-version-check",
     "first-package",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "bugs": {
     "url": "https://github.com/KK-Designs/Major-version-check/issues"

@@ -1,1 +1,1 @@
-export function majorVer(oldVersion: string, newVersion: string, options: any);
+export function majorVer(oldVersion: string, newVersion: string, options?: object): boolean;
