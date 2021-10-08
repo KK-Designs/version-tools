@@ -1,10 +1,10 @@
+![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")
+‎
 ![downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Downloads")
 ‎‎‎‎‎
 ![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/Major-version-check?style=for-the-badge "Issues")
 
 ![lisence](https://img.shields.io/github/license/KK-Designs/Major-version-check?color=important&style=for-the-badge "Lisence")
-
-![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")
 
 ---
 
