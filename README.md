@@ -1,10 +1,10 @@
-![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")
+[![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/Major-version-check/releases/tag/v1.2.1)
 ‎
-![downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Downloads")
+[![downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Downloads")](https://www.npmjs.com/package/major-version-check#:~:text=Weekly%20Downloads)
 ‎‎‎‎‎
-![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/Major-version-check?style=for-the-badge "Issues")
+[![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/Major-version-check?style=for-the-badge "Issues")](https://github.com/KK-Designs/Major-version-check/issues)
 
-![lisence](https://img.shields.io/github/license/KK-Designs/Major-version-check?color=important&style=for-the-badge "Lisence")
+[![lisence](https://img.shields.io/github/license/KK-Designs/Major-version-check?color=important&style=for-the-badge "Lisence")](https://raw.githubusercontent.com/KK-Designs/Major-version-check/master/LICENSE)
 
 ---
 
