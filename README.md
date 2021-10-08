@@ -13,7 +13,7 @@ A small module to check if two specified version numbers are major changes
 
 ---
 
-# Changelog (v1.2.1)
+# Changelog (v1.2.2)
 
 • Fixed spelling error in docs \
 • Added an error debugging section to the docs \
