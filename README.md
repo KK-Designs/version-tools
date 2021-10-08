@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/Major-version-check/releases/tag/v1.2.1)
+[![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/Major-version-check/releases/tag/v1.2.2)
 ‎
 [![downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Downloads")](https://www.npmjs.com/package/major-version-check#:~:text=Weekly%20Downloads)
 ‎‎‎‎‎
