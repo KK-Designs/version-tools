@@ -1,18 +1,20 @@
 {
-  "name": "major-version-check",
-  "version": "1.2.2",
+  "name": "version-tools",
+  "version": "1.3.0",
   "description": "A small module to check if two specified version numbers are major changes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "jest",
-    "demo": "echo \"https://jsfiddle.net/NotBacon/60b57toj/\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "major",
     "version",
     "version check",
     "major-version-check",
+    "parser",
+    "version-parser",
+    "version-tools",
     "first-package",
     "javascript",
     "typescript"
