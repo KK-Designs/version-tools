@@ -10,8 +10,8 @@
 
 ---
 
-# Major version check
-A small module to check if two specified version numbers are major changes
+# Version tools
+A small module to check the information about versions, such as parsing version data, and checking if the two version is a major change.
 
 ---
 

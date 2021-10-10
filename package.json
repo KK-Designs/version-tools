@@ -1,6 +1,6 @@
 {
   "name": "version-tools",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "A small module to check if two specified version numbers are major changes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
