@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/npm/v/version-tools?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/version-tools/releases/tag/v1.2.2)
+[![version](https://img.shields.io/npm/v/version-tools?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/version-tools/releases/tag/v1.3.2)
 ‎
 [![weekly_downloads](https://img.shields.io/npm/dw/version-tools?color=blue&style=for-the-badge "Weekly Downloads")](https://www.npmjs.com/package/version-tools#:~:text=Weekly%20Downloads)
 
@@ -15,7 +15,7 @@ A small module to check the information about versions, such as parsing version 
 
 ---
 
-# Changelog (`v1.3.1`)
+# Changelog (`v1.3.2`)
 
 • Fixed spelling error in docs \
 • Added a new total downloads badge to docs \
@@ -56,20 +56,23 @@ npm i version-tools
 
 First you must import the library using the following code:
 ```javascript
-const { majorVer } = require('version-tools');
-// or `import { majorVer } from 'version-tools';` for Typescript users
+const versionTools = require('version-tools');
+// or `import * as versionTools from 'version-tools';` for Typescript users
 ```
 \
 Then all you have to do is call the function with some values:
 ```javascript
-const { majorVer } = require('version-tools');
-// or `import { majorVer } from 'version-tools';` for Typescript users
+const versionTools = require('version-tools');
+// or `import * as versionTools from 'version-tools';` for Typescript users
 
 // Will return true
-console.log(majorVer('1.0.0', '2.0.0'));
+console.log(versionTools.majorVer('1.0.0', '2.0.0'));
 
 // Will return false
-console.log(majorVer('1.0.0', '1.0.1'));
+console.log(versionTools.majorVer('1.0.0', '1.0.1'));
+
+// Will return info abou the version
+console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
 ```
 **Thats it! Now you have it running!**
 
