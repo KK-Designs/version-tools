@@ -15,7 +15,7 @@ A small module to check if two specified version numbers are major changes
 
 ---
 
-# Changelog (`v1.3.0`)
+# Changelog (`v1.3.1`)
 
 • Fixed spelling error in docs \
 • Added a new total downloads badge to docs \
