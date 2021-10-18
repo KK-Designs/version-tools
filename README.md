@@ -4,9 +4,9 @@
 
 ![downloads](https://badgen.net/npm/dt/major-version-check "Downloads")
 ‎‎‎
-[![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/major-version-check?style=for-the-badge "Issues")](https://github.com/KK-Designs/major-version-check/issues)
+[![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/version-tools?style=for-the-badge "Issues")](https://github.com/KK-Designs/version-tools/issues)
 
-[![lisence](https://img.shields.io/github/license/KK-Designs/major-version-check?color=important&style=for-the-badge "Lisence")](https://raw.githubusercontent.com/KK-Designs/major-version-check/master/LICENSE)
+[![lisence](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "Lisence")](https://github.com/KK-Designs/version-tools/blob/master/LICENSE)
 
 ---
 
