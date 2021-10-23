@@ -1,13 +1,14 @@
 [![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/major-version-check/releases/tag/v1.3.3)
 ‎
 [![weekly_downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Weekly Downloads")](https://www.npmjs.com/package/major-version-check#:~:text=Weekly%20Downloads)
-
+‎
 ![downloads](https://badgen.net/npm/dt/major-version-check "Downloads")
-‎‎‎
+‎
 [![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/version-tools?style=for-the-badge "Issues")](https://github.com/KK-Designs/version-tools/issues)
-
+‎
 [![lisence](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "Lisence")](https://github.com/KK-Designs/version-tools/blob/master/LICENSE)
-
+‎
+[![major-version-check](https://nodei.co/npm/major-version-check.png "Major-version-check on NPM")](https://www.npmjs.com/package/major-version-check)
 ---
 
 # Version tools
