@@ -63,22 +63,24 @@ console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `oldVersion`    | string (required) | `majorVer(oldVersion, ...)`              | The old version to compare    |
-| `newVersion`    | string (required) | `majorVer(..., newVersion)`              | The new version to compare |
+| `oldVersion`    | string (required) | `majorVer(oldVersion, ...);`              | The old version to compare    |
+| `newVersion`    | string (required) | `majorVer(..., newVersion);`              | The new version to compare |
 | `options.debug` | boolean | `majorVer(..., ..., { debug: boolean });` | Weather to log debug messages |
 
 ### Parameter info for `parseVersion()`
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `version`    | string (required) | `parseVersion(version, ...)`              | The old version to compare    |
+| `version`    | string (required) | `parseVersion(version, ...);`              | The old version to compare    |
 | `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
 
 # Errors
-Errors are common to all, but it doesn't mean its not preventable. Read on to solve some common errors with this library. See below for a clear explanation and solution \
+Errors are common to all, but it doesn't mean its not preventable. Read on to solve some common errors with this library. See below for a clear explanation and solution
 
 | Error                                                                    | Explanation                                                                                                                                  | How to fix                                                                                                          |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| TypeError: Expected "number" but got foo (reading parameter "bar")       | It means that for one of the function parameters you didn't put a number-string                                                              | If your trying to add a tag try making it like `majorVer('1.0.0-dev', ...)` instead of `majorVer('dev-1.0.0', ...)` |
-| TypeError: Expected "string" but got undefined (reading parameter "bar") | It means that one of the parameters you provided was either missing, undefined, or null                                                      | Make sure all the required parameters are provided                                                                  |
-| SyntaxError: Unexpected token '.'                                        | This error will only occur if using node versions `13.14.0` and below. This module is only compatible with node versions `14.17.6` and above | Upgrade to node version `14.17.6` and above                                                                         |
+| `TypeError: Expected "number" but got foo (reading parameter "bar")`       | It means that for one of the function parameters you didn't put a number-string                                                              | If your trying to add a tag try making it like `majorVer('1.0.0-dev', ...)` instead of `majorVer('dev-1.0.0', ...)` |
+| `TypeError: Expected "string" but got undefined (reading parameter "bar")` | It means that one of the parameters you provided was either missing, undefined, or null                                                      | Make sure all the required parameters are provided                                                                  |
+| `SyntaxError: Unexpected token '.'`                                        | This error will only occur if using node versions `13.14.0` and below. This module is only compatible with node versions `14.17.6` and above | Upgrade to node version `14.17.6` and above                                                                         |
+# 
+[![](backToTop.png?raw=true "Back to top")](#version-tools)
