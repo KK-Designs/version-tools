@@ -83,4 +83,4 @@ Errors are common to all, but it doesn't mean its not preventable. Read on to so
 | `TypeError: Expected "string" but got undefined (reading parameter "bar")` | It means that one of the parameters you provided was either missing, undefined, or null                                                      | Make sure all the required parameters are provided                                                                  |
 | `SyntaxError: Unexpected token '.'`                                        | This error will only occur if using node versions `13.14.0` and below. This module is only compatible with node versions `14.17.6` and above | Upgrade to node version `14.17.6` and above                                                                         |
 # 
-[![](backToTop.png?raw=true "Back to top")](#version-tools)
+[![](backToTop.png?raw=true "Back to top")](#readme)
