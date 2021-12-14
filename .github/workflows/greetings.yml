@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hello! It looks like this is your first issue. When creating an issue, make sure to include descriptive title and body. Attach and image or video when possible'
+        pr-message: 'Hello! It looks like this is your first pull request. When creating a PR, make sure to clearly and briefly describe your changes. Also tell us why you want to merge it and its benefits'
