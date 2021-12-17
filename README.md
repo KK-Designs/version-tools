@@ -6,8 +6,9 @@
 ‎
 [![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/version-tools?style=for-the-badge "Issues")](https://github.com/KK-Designs/version-tools/issues)
 ‎
-[![license](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "License")](https://raw.githubusercontent.com/KK-Designs/version-tools/master/LICENSE)
-
+[![license](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "License")](https://github.com/KK-Designs/version-tools/blob/master/LICENSE)
+‎
+[![major-version-check](https://nodei.co/npm/major-version-check.png "Major-version-check on NPM")](https://www.npmjs.com/package/major-version-check)
 ---
 
 # Version tools
@@ -74,13 +75,29 @@ console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `oldVersion`    | string (required) | `majorVer(oldVersion, ...)`              | The old version to compare    |
-| `newVersion`    | string (required) | `majorVer(..., newVersion)`              | The new version to compare |
+| `oldVersion`    | string (required) | `majorVer(oldVersion, ...);`              | The old version to compare    |
+| `newVersion`    | string (required) | `majorVer(..., newVersion);`              | The new version to compare |
 | `options.debug` | boolean | `majorVer(..., ..., { debug: boolean });` | Weather to log debug messages |
 
 ### Parameter info for `parseVersion()`
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
+<<<<<<< HEAD
 | `version`    | string (required) | `parseVersion(version, ...)`              | The old version to compare    |
 | `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
+=======
+| `version`    | string (required) | `parseVersion(version, ...);`              | The old version to compare    |
+| `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
+
+# Errors
+Errors are common to all, but it doesn't mean its not preventable. Read on to solve some common errors with this library. See below for a clear explanation and solution
+
+| Error                                                                    | Explanation                                                                                                                                  | How to fix                                                                                                          |
+|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `TypeError: Expected "number" but got foo (reading parameter "bar")`       | It means that for one of the function parameters you didn't put a number-string                                                              | If your trying to add a tag try making it like `majorVer('1.0.0-dev', ...)` instead of `majorVer('dev-1.0.0', ...)` |
+| `TypeError: Expected "string" but got undefined (reading parameter "bar")` | It means that one of the parameters you provided was either missing, undefined, or null                                                      | Make sure all the required parameters are provided                                                                  |
+| `SyntaxError: Unexpected token '.'`                                        | This error will only occur if using node versions `13.14.0` and below. This module is only compatible with node versions `14.17.6` and above | Upgrade to node version `14.17.6` and above                                                                         |
+# 
+[![](backToTop.png?raw=true "Back to top")](#readme)
+>>>>>>> 5e2ffb389c16edf1277aa117d29950adbbef5ebc
