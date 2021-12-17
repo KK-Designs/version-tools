@@ -1,2 +1,0 @@
-export function majorVer(oldVersion: string, newVersion: string, options?: { debug: boolean; }): boolean;
-export function parseVersion(version: string, options?: { debug: boolean; }): {"versionNumbers": string[], "versionTags"?: string[]; };
