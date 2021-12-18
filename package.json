@@ -13,7 +13,7 @@
   "module": "./lib/esm/index.mjs",
   "types": "./types/index.d.ts",
   "scripts": {
-	"test": "jest",
+	"test": "echo Use `jest` for testing && exit 1",
 	"demo": "echo https://runkit.com/embed/lwken7n6k71q && exit 1",
 	"lint": "eslint .",
 	"fix": "eslint . --fix"
