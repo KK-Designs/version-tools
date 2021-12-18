@@ -1,31 +1,31 @@
 {
   "name": "major-version-check",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A small module to check if two specified version numbers are major changes",
   "type": "commonjs",
   "main": "./lib/cjs/index.js",
   "exports": {
-	".": {
-	  "require":  "./lib/cjs/index.js",
-	  "default": "./lib/esm/index.mjs"
-	}
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "default": "./lib/esm/index.mjs"
+    }
   },
   "module": "./lib/esm/index.mjs",
   "types": "./types/index.d.ts",
   "scripts": {
     "test": "jest",
     "demo": "echo https://runkit.com/embed/lwken7n6k71q && exit 1",
-	"lint": "eslint .",
-	"fix": "eslint . --fix"
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "keywords": [
     "major",
     "version",
     "version check",
-	"version-tools",
+    "version-tools",
     "major-version-check",
     "parser",
-	"semver",
+    "semver",
     "version-parser",
     "first-package",
     "javascript",
@@ -33,7 +33,7 @@
   ],
   "bugs": {
     "url": "https://github.com/KK-Designs/version-tools/issues",
-	"email": "kkart2007@gmail.com"
+    "email": "kkart2007@gmail.com"
   },
   "homepage": "https://github.com/KK-Designs/version-tools#readme",
   "author": "NotBacon",
@@ -41,6 +41,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/KK-Designs/version-tools"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "devDependencies": {
     "eslint": "^8.5.0",

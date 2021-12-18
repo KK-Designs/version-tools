@@ -6,8 +6,9 @@
 ‎
 [![issues](https://img.shields.io/github/issues/KK-Designs/KK-Designs/version-tools?style=for-the-badge "Issues")](https://github.com/KK-Designs/version-tools/issues)
 ‎
-[![license](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "License")](https://raw.githubusercontent.com/KK-Designs/version-tools/master/LICENSE)
-
+[![license](https://img.shields.io/github/license/KK-Designs/version-tools?color=important&style=for-the-badge "License")](https://github.com/KK-Designs/version-tools/blob/master/LICENSE)
+‎
+[![major-version-check](https://nodei.co/npm/major-version-check.png "Major-version-check on NPM")](https://www.npmjs.com/package/major-version-check)
 ---
 
 # Version tools
@@ -15,20 +16,15 @@ A small module to check the information about versions, such as comparing, parsi
 
 ---
 
-# Changelog (`v1.4.0`)
+# Changelog (`v1.4.1`)
 
-• Added hybrid support for `ESM`. \
-• Added eslint. \
-• Added example types. \
-• Updated dependencies. \
-• Re-added demo script. \
-• Fixed spelling error in docs. \
-• Added a "to-do" in the docs. \
-• Fixed bug in `parseVersion()` where it would return a plain array instead of an object when no tags existed. \
-• Fixed and updated types. \
-• Changed license from `Apache-2.0` to `CC0-1.0`. \
-• Fixed the version check for old node versions \
-• Code organization and optimizations.
+• **Fixed conflict in docs**. \
+• Added new function to `readme.md`. \
+• Added new function to tests. \
+• Updated `tsconfig.json`. \
+• Added new scripts to `package.json`. \
+• Some more linting. \
+• Added the version check for old node versions.
 
 # To-do
 • Make `parseVersion()` function return version numbers as a `int` instead of a `string`.
@@ -66,6 +62,12 @@ console.log(versionTools.majorVer('1.0.0', '1.0.1'));
 
 // Will return info about the version
 console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
+
+// Will return true
+console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'), versionTools.parseVersion('1.0.0'), { type: 'greaterThan' })}`);
+
+// Will return false
+console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'), versionTools.parseVersion('1.0.0'), { type: 'lessThan' })}`);
 ```
 **Thats it! Now you have it running!**
 
@@ -74,13 +76,24 @@ console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `oldVersion`    | string (required) | `majorVer(oldVersion, ...)`              | The old version to compare    |
-| `newVersion`    | string (required) | `majorVer(..., newVersion)`              | The new version to compare |
+| `oldVersion`    | string (required) | `majorVer(oldVersion, ...);`              | The old version to compare    |
+| `newVersion`    | string (required) | `majorVer(..., newVersion);`              | The new version to compare |
 | `options.debug` | boolean | `majorVer(..., ..., { debug: boolean });` | Weather to log debug messages |
 
 ### Parameter info for `parseVersion()`
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-| `version`    | string (required) | `parseVersion(version, ...)`              | The old version to compare    |
+| `version`    | string (required) | `parseVersion(version, ...);`              | The version to parse    |
 | `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
+
+### Parameter info for `compare()`
+
+| Parameters    | Type    | Usage                                  | Description                   |
+|---------------|---------|----------------------------------------|-------------------------------|
+| `version`    | object (required) | `compare(version, ...);`              | The version to compare    |
+| `comparator`    | string (required) | `compare(..., comparator, ...);`              | The second version to compare    |
+| `options.debug` | boolean | `compare(..., ..., { debug: boolean });` | Weather to log debug messages |
+
+#
+[![](backToTop.png?raw=true "Back to top")](#readme)
