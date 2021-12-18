@@ -5,51 +5,50 @@
   "type": "commonjs",
   "main": "./lib/cjs/index.js",
   "exports": {
-	".": {
-	  "require":  "./lib/cjs/index.js",
-	  "default": "./lib/esm/index.mjs"
-	}
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "default": "./lib/esm/index.mjs"
+    }
   },
   "module": "./lib/esm/index.mjs",
   "types": "./types/index.d.ts",
   "scripts": {
-	"test": "echo Use `jest` for testing && exit 1",
-	"demo": "echo https://runkit.com/embed/lwken7n6k71q && exit 1",
-	"lint": "eslint .",
-	"fix": "eslint . --fix"
+    "test": "node ./lib/test/index.test.js",
+    "demo": "echo https://runkit.com/embed/lwken7n6k71q && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "keywords": [
-	"major",
-	"version",
-	"version check",
-	"version-tools",
-	"major-version-check",
-	"parser",
-	"semver",
-	"version-parser",
-	"first-package",
-	"javascript",
-	"typescript"
+    "major",
+    "version",
+    "version check",
+    "version-tools",
+    "major-version-check",
+    "parser",
+    "semver",
+    "version-parser",
+    "first-package",
+    "javascript",
+    "typescript"
   ],
   "bugs": {
-	"url": "https://github.com/KK-Designs/version-tools/issues",
-	"email": "kkart2007@gmail.com"
+    "url": "https://github.com/KK-Designs/version-tools/issues",
+    "email": "kkart2007@gmail.com"
   },
   "homepage": "https://github.com/KK-Designs/version-tools#readme",
   "author": "NotBacon",
   "license": "CC0-1.0",
   "repository": {
-	"type": "git",
-	"url": "https://github.com/KK-Designs/version-tools"
+    "type": "git",
+    "url": "https://github.com/KK-Designs/version-tools"
   },
   "engines": {
-	"node": ">=14.0.0"
+    "node": ">=14.0.0"
   },
   "devDependencies": {
-	"eslint": "^8.5.0",
-	"jest": "^27.4.5"
+    "eslint": "^8.5.0"
   },
   "dependencies": {
-	"meant": "^2.0.1"
+    "meant": "^2.0.1"
   }
 }
