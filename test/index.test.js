@@ -1,13 +1,16 @@
-const { majorVer, parseVersion, compare } = require('../lib/index.js');
+const { majorVer, parseVersion, compare } = require('../lib/cjs/index.js');
 
 // Will return true
-console.log(`Running code with oldVersion as 1.0.0 and newVersion as 2.0.0 (should return true)\nOutput:\n${majorVer('1.0.0', '2.0.0')}`);
+console.log(majorVer('1.0.0', '2.0.0'));
 
 // Will return false
-console.log(`Running code with oldVersion as 1.0.0 and newVersion as 1.0.1 (should return false)\nOutput:\n${majorVer('1.0.0', '1.0.1')}`);
+console.log(majorVer('1.0.0', '1.0.1'));
 
-// Will return `{"versionNumbers":["1","0","0"],"versionTags":["beta"]}`
-console.log(`Running code with version as 1.0.0-beta\nOutput:\n${JSON.stringify(parseVersion('1.0.0-beta'))}`);
+// Will return info about the version
+console.log(JSON.stringify(parseVersion('1.0.0-beta')));
 
 // Will return true
-console.log('Output:\n' + compare(parseVersion('1.0.1'), parseVersion('1.0.0'), { type: 'greaterThan' }));
+console.log(`Output:\n${compare(parseVersion('1.0.1'), parseVersion('1.0.0'), { type: 'greaterThan' })}`);
+
+// Will return false
+console.log(`Output:\n${compare(parseVersion('1.0.1'), parseVersion('1.0.0'), { type: 'lessThan' })}`);

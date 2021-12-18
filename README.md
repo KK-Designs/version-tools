@@ -16,20 +16,15 @@ A small module to check the information about versions, such as comparing, parsi
 
 ---
 
-# Changelog (`v1.4.0`)
+# Changelog (`v1.4.1`)
 
-• Added hybrid support for `ESM`. \
-• Added eslint. \
-• Added example types. \
-• Updated dependencies. \
-• Re-added demo script. \
-• Fixed spelling error in docs. \
-• Added a "to-do" in the docs. \
-• Fixed bug in `parseVersion()` where it would return a plain array instead of an object when no tags existed. \
-• Fixed and updated types. \
-• Changed license from `Apache-2.0` to `CC0-1.0`. \
-• Fixed the version check for old node versions \
-• Code organization and optimizations.
+• **Fixed conflict in docs**. \
+• Added new function to `readme.md`. \
+• Added new function to tests. \
+• Updated `tsconfig.json`. \
+• Added new scripts to `package.json`. \
+• Some more linting. \
+• Added the version check for old node versions.
 
 # To-do
 • Make `parseVersion()` function return version numbers as a `int` instead of a `string`.
@@ -67,6 +62,12 @@ console.log(versionTools.majorVer('1.0.0', '1.0.1'));
 
 // Will return info about the version
 console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
+
+// Will return true
+console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'), versionTools.parseVersion('1.0.0'), { type: 'greaterThan' })}`);
+
+// Will return false
+console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'), versionTools.parseVersion('1.0.0'), { type: 'lessThan' })}`);
 ```
 **Thats it! Now you have it running!**
 
@@ -83,21 +84,16 @@ console.log(JSON.stringify(versionTools.parseVersion('1.0.0-beta')));
 
 | Parameters    | Type    | Usage                                  | Description                   |
 |---------------|---------|----------------------------------------|-------------------------------|
-<<<<<<< HEAD
-| `version`    | string (required) | `parseVersion(version, ...)`              | The old version to compare    |
-| `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
-=======
-| `version`    | string (required) | `parseVersion(version, ...);`              | The old version to compare    |
+| `version`    | string (required) | `parseVersion(version, ...);`              | The version to parse    |
 | `options.debug` | boolean | `parseVersion(..., { debug: boolean });` | Weather to log debug messages |
 
-# Errors
-Errors are common to all, but it doesn't mean its not preventable. Read on to solve some common errors with this library. See below for a clear explanation and solution
+### Parameter info for `compare()`
 
-| Error                                                                    | Explanation                                                                                                                                  | How to fix                                                                                                          |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| `TypeError: Expected "number" but got foo (reading parameter "bar")`       | It means that for one of the function parameters you didn't put a number-string                                                              | If your trying to add a tag try making it like `majorVer('1.0.0-dev', ...)` instead of `majorVer('dev-1.0.0', ...)` |
-| `TypeError: Expected "string" but got undefined (reading parameter "bar")` | It means that one of the parameters you provided was either missing, undefined, or null                                                      | Make sure all the required parameters are provided                                                                  |
-| `SyntaxError: Unexpected token '.'`                                        | This error will only occur if using node versions `13.14.0` and below. This module is only compatible with node versions `14.17.6` and above | Upgrade to node version `14.17.6` and above                                                                         |
-# 
+| Parameters    | Type    | Usage                                  | Description                   |
+|---------------|---------|----------------------------------------|-------------------------------|
+| `version`    | object (required) | `compare(version, ...);`              | The version to compare    |
+| `comparator`    | string (required) | `compare(..., comparator, ...);`              | The second version to compare    |
+| `options.debug` | boolean | `compare(..., ..., { debug: boolean });` | Weather to log debug messages |
+
+#
 [![](backToTop.png?raw=true "Back to top")](#readme)
->>>>>>> 5e2ffb389c16edf1277aa117d29950adbbef5ebc
