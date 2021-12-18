@@ -21,6 +21,7 @@ A small module to check the information about versions, such as comparing, parsi
 • **Fixed conflict in docs**. \
 • Added new function to `readme.md`. \
 • Added new function to tests. \
+• No longer use jest as it isn't required. \
 • Updated `tsconfig.json`. \
 • Added new scripts to `package.json`. \
 • Some more linting. \
