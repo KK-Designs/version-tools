@@ -34,7 +34,7 @@ A small module to check the information about versions, such as comparing, parsi
 
 # Installation
 
-```
+```sh-session
 npm i major-version-check
 ```
 
