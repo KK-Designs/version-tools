@@ -46,7 +46,7 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.5.0"
+    "eslint": "^8.7.0"
   },
   "dependencies": {
     "meant": "^2.0.1"
