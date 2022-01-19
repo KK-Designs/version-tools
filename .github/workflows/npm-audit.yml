@@ -1,0 +1,23 @@
+name: "NPM Audit Report - PR"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ master ]
+  schedule:
+    - cron: '43 12 * * 6'
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: NPM Audit Comment
+        uses: wx-jayesh/actions-npm-audit-comment@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
