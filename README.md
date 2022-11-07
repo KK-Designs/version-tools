@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/version-tools/releases/tag/v1.3.3)
+[![version](https://img.shields.io/npm/v/major-version-check?color=blueviolet&style=for-the-badge "Version")](https://github.com/KK-Designs/version-tools/releases/tag/v1.4.1)
 ‎
 [![weekly_downloads](https://img.shields.io/npm/dw/major-version-check?color=blue&style=for-the-badge "Weekly Downloads")](https://www.npmjs.com/package/major-version-check#:~:text=Weekly%20Downloads)
 ‎
@@ -47,13 +47,13 @@ npm i major-version-check
 First you must import the library using the following code:
 ```javascript
 const versionTools = require('major-version-check');
-// or `import * as versionTools from 'major-version-check';` for Typescript users
+// or `import * as versionTools from 'major-version-check';` for ESM users
 ```
 \
 Then all you have to do is call the function with some values:
 ```javascript
 const versionTools = require('major-version-check');
-// or `import * as versionTools from 'major-version-check';` for Typescript users
+// or `import * as versionTools from 'major-version-check';` for ESM users
 
 // Will return true
 console.log(versionTools.majorVer('1.0.0', '2.0.0'));
