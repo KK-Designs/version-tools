@@ -18,7 +18,7 @@ A small module to check the information about versions, such as comparing, parsi
 
 # Changelog (`v1.4.1`)
 
-• **Fixed conflict in docs**. \
+• Fixed conflict in docs. \
 • Added new function to `readme.md`. \
 • Added new function to tests. \
 • No longer use jest as it isn't required. \
