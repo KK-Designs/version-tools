@@ -12,7 +12,7 @@
 ---
 
 # Version tools
-A small module to check the information about versions, such as comparing, parsing version data, and checking if the two version is a major change.
+A small module to check the information about versions, such as comparing, parsing version data, and checking if the two versions are a major change.
 
 ---
 
@@ -44,7 +44,7 @@ npm i major-version-check
 
 > ⚠ **This library is ONLY compatible with node version 14 and above**
 
-First you must import the library using the following code:
+First, you must import the library using the following code:
 ```javascript
 const versionTools = require('major-version-check');
 // or `import * as versionTools from 'major-version-check';` for ESM users
@@ -70,7 +70,7 @@ console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'),
 // Will return false
 console.log(`Output:\n${versionTools.compare(versionTools.parseVersion('1.0.1'), versionTools.parseVersion('1.0.0'), { type: 'lessThan' })}`);
 ```
-**Thats it! Now you have it running!**
+**That's it! Now you have it running!**
 
 # Parameters
 ### Parameter info for `majorVer()`
